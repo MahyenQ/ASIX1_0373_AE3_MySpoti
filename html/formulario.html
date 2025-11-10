@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Ariana Grande</title>
+    <link rel="icon" type="image/png" href="../imagenes/formulario.png">
+</head>
+<body>
+<header>
+        <nav aria-label="Menu Primcipal"></nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./discografia.html">Ver Discografía</a></li>
+                <li><a href="./formulario.html">Suscribirse a Newsletter</a></li>
+                <li><a href="./album1.html">Primer album</a></li>
+                <li><a href="./album2.html">Segundo album</a></li>
+                <li><a href="./album3.html">Tercer album</a></li>
+            </ul>
+        </nav>
+  </header>
+
+    <center><em><h1>FORMULARIO DE INSCRIPCIÓN</h1></em></center>
+    <main>
+    <section>
+      <form action="#" method="post" novalidate>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" type="text" required><br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" name="apellidos" type="text" required><br><br>
+            <label for="edad">Edad:</label>
+            <input id="edad" name="edad" type="number" min="0" max="120" required><br><br>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="">-- Elige un país --</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="UK">Reino Unido</option>
+                <option value="AR">Argentina</option>
+                <option value="MX">México</option>
+            </select><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input id="email" name="email" type="email" required><br><br>
+
+            <fieldset>
+            <legend><h2>Intereses</h2></legend>
+            <div>
+                <input id="interes-noticias" name="intereses" value="noticias" type="checkbox">
+                <label for="interes-noticias">Noticias</label>
+            </div>
+            <div>
+                <input id="interes-conciertos" name="intereses" value="conciertos" type="checkbox">
+                <label for="interes-conciertos">Conciertos / Giras</label>
+            </div>
+            <div>
+                <input id="interes-nuevos-lanzamientos" name="intereses" value="lanzamientos" type="checkbox">
+                <label for="interes-nuevos-lanzamientos">Nuevos lanzamientos</label>
+            </div>
+            </fieldset><br><br>
+
+            <div>
+            <label for="telefono">Teléfono (opcional):</label>
+            <input id="telefono" name="telefono" type="tel" pattern="[0-9+\-\s]{7,20}" placeholder="+34 600 000 000">
+            </div><br><br>
+            
+            <button type="submit">Suscribirse</button>
+            <button type="reset">Borrar</button>
+      </form>
+
+      <p>Notas: se han usado tipos adecuados: <code>email</code> para el correo, <code>number</code> para edad, <code>select</code> para país y <code>checkbox</code> para intereses.</p>
+    </section>
+  </main>
+</body>
+</html>
