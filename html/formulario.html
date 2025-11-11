@@ -3,73 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario - Ariana Grande</title>
-    <link rel="icon" type="image/png" href="../imagenes/formulario.png">
+    <title>Formulario - Ariana Grande</title> <!--Es el título de la página-->
+    <link rel="icon" type="image/png" href="../imagenes/formulario.png"> <!--Icono de la página-->
+    <script src="https://kit.fontawesome.com/775493b5a6.js" crossorigin="anonymous"></script> <!--Enlace de los iconos de Font Awesome-->
 </head>
 <body>
-<header>
-        <nav aria-label="Menu Primcipal"></nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./discografia.html">Ver Discografía</a></li>
-                <li><a href="./formulario.html">Suscribirse a Newsletter</a></li>
-                <li><a href="./album1.html">Primer album</a></li>
-                <li><a href="./album2.html">Segundo album</a></li>
-                <li><a href="./album3.html">Tercer album</a></li>
-            </ul>
-        </nav>
-  </header>
+<header> <!-- aqui es por donde empieza el encabezado-->
+        <nav aria-label="Menu Primcipal"></nav> <!--esto es el menu de navegacion principal donde aria-label es para accesibilidad-->
+            <center> <!--lo he utilizado para centrar el menu de navegacion-->
+                <ul> <!--Lista desordenada para el menu de navegacion-->
+                <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a> <!-- Enlace a la página de inicio con un icono de casa-->
+                <a href="./discografia.html"><i class="fa-solid fa-compact-disc"></i>Ver Discografía</a> <!-- Enlace a la página de discografía con un icono de disco-->
+                <a href="./formulario.html"><i class="fa-solid fa-envelope-open"></i>Suscribirse a Newsletter</a> <!-- Enlace a la página de formulario con un icono -->
+                <a href="./album1.html"><i class="fa-solid fa-music"></i>Primer album</a> <!-- Enlace a la página del primer álbum con un icono de música-->
+                <a href="./album2.html"><i class="fa-solid fa-music"></i>Segundo album</a> <!-- Enlace a la página del segundo álbum con un icono de música-->
+                <a href="./album3.html"><i class="fa-solid fa-music"></i>Tercer album</a> <!-- Enlace a la página del tercer álbum con un icono de música-->
+            </ul> <!--Cierre de la lista desordenada-->
+        </nav></center> <!--Cierre del menú de navegación y centrado-->
+  </header> <!--Cierre del encabezado-->
 
-    <center><em><h1>FORMULARIO DE INSCRIPCIÓN</h1></em></center>
-    <main>
-    <section>
-      <form action="#" method="post" novalidate>
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" name="nombre" type="text" required><br><br>
-            <label for="apellidos">Apellidos:</label>
-            <input id="apellidos" name="apellidos" type="text" required><br><br>
-            <label for="edad">Edad:</label>
-            <input id="edad" name="edad" type="number" min="0" max="120" required><br><br>
-            <label for="pais">País:</label>
-            <select id="pais" name="pais" required>
-                <option value="">-- Elige un país --</option>
-                <option value="ES">España</option>
-                <option value="US">Estados Unidos</option>
-                <option value="UK">Reino Unido</option>
-                <option value="AR">Argentina</option>
-                <option value="MX">México</option>
-            </select><br><br>
-
-            <label for="email">Correo electrónico:</label>
-            <input id="email" name="email" type="email" required><br><br>
-
-            <fieldset>
-            <legend><h2>Intereses</h2></legend>
-            <div>
-                <input id="interes-noticias" name="intereses" value="noticias" type="checkbox">
-                <label for="interes-noticias">Noticias</label>
-            </div>
-            <div>
-                <input id="interes-conciertos" name="intereses" value="conciertos" type="checkbox">
-                <label for="interes-conciertos">Conciertos / Giras</label>
-            </div>
-            <div>
-                <input id="interes-nuevos-lanzamientos" name="intereses" value="lanzamientos" type="checkbox">
-                <label for="interes-nuevos-lanzamientos">Nuevos lanzamientos</label>
-            </div>
-            </fieldset><br><br>
-
-            <div>
-            <label for="telefono">Teléfono (opcional):</label>
-            <input id="telefono" name="telefono" type="tel" pattern="[0-9+\-\s]{7,20}" placeholder="+34 600 000 000">
-            </div><br><br>
+    <center><em><h1>FORMULARIO DE INSCRIPCIÓN</h1></em></center> <!--Título principal de la sección y centrado-->
+    <main> <!--Contenido principal de la página-->
+    <section> <!--Sección del formulario de inscripción-->
+      <form action="./gracias.html" method="post" target="_blank"> <!--Formulario que envía los datos a gracias.html-->
+        
+            <label for="nombre">Nombre:</label> <!-- esta es la etiqueta del nombre donde label se usa para definir una etiqueta para un elemento de formulario -->
+            <input id="nombre" name="nombre" type="text" required><br><br> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir su nombre -->
+            <label for="apellidos">Apellidos:</label> <!-- esta es la etiqueta de los apellidos -->
+            <input id="apellidos" name="apellidos" type="text" required><br><br> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir sus apellidos -->
+            <label for="edad">Edad:</label> <!-- esta es la etiqueta de la edad -->
+            <input id="edad" name="edad" type="number" min="0" max="100" required><br><br> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir su edad con un minimo y un maximo -->
             
-            <button type="submit">Suscribirse</button>
-            <button type="reset">Borrar</button>
-      </form>
+            <label for="pais">País:</label> <!-- esta es la etiqueta del pais -->
+            <select id="pais" name="pais" required> <!-- en esta linea de select se define un menu desplegable para que el usuario pueda seleccionar su pais -->
+                <option> -- Elige un país -- </option> <!-- la opcion por defecto del menu desplegable -->
+                <option value="ES">España</option> <!-- las diferentes opciones del menu desplegable -->
+                <option value="US">Estados Unidos</option> <!-- las diferentes opciones del menu desplegable -->
+                <option value="UK">Reino Unido</option> <!-- las diferentes opciones del menu desplegable -->
+                <option value="AR">Argentina</option> <!-- las diferentes opciones del menu desplegable -->
+                <option value="MX">México</option> <!-- las diferentes opciones del menu desplegable -->
+            </select><br><br> <!--Cierre del menú desplegable-->
 
-      <p>Notas: se han usado tipos adecuados: <code>email</code> para el correo, <code>number</code> para edad, <code>select</code> para país y <code>checkbox</code> para intereses.</p>
-    </section>
+            <label for="correo">Correo electrónico:</label> <!-- esta es la etiqueta del correo electronico -->
+            <input id="correo" name="correo" type="correo" required><br><br> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir su correo electronico -->
+
+            <fieldset> <!-- fieldset se utiliza para agrupar elementos relacionados dentro de un formulario -->
+                <legend><h2>Intereses</h2></legend> <!-- la leyenda del fieldset que es el titulo de los intereses -->
+                <div> <!-- este div se utiliza para estructurar las diferentes opciones de intereses -->
+                    <input id="interes-noticias" name="intereses" value="noticias" type="checkbox"> <!-- en esta linea de input se define una casilla de verificacion para que el usuario pueda seleccionar su interes -->
+                    <label for="interes-noticias">Noticias</label> <!-- esta es la etiqueta de la casilla de verificacion -->
+                </div> <!--Cierre del div-->
+                <div> <!-- este div se utiliza para estructurar las diferentes opciones de intereses -->
+                    <input id="interes-conciertos" name="intereses" value="conciertos" type="checkbox"> <!-- en esta linea de input se define una casilla de verificacion para que el usuario pueda seleccionar su interes -->
+                    <label for="interes-conciertos">Conciertos / Giras</label> <!-- esta es la etiqueta de la casilla de verificacion -->
+                </div> <!--Cierre del div-->
+                <div> <!-- este div se utiliza para estructurar las diferentes opciones de intereses -->
+                    <input id="interes-nuevos-lanzamientos" name="intereses" value="lanzamientos" type="checkbox"> <!-- en esta linea de input se define una casilla de verificacion para que el usuario pueda seleccionar su interes -->
+                    <label for="interes-nuevos-lanzamientos">Nuevos lanzamientos</label> <!-- esta es la etiqueta de la casilla de verificacion -->
+                </div> <!--Cierre del div-->
+            </fieldset><br><br> <!--Cierre del fieldset que era para agrupar los intereses y dos br para dar espacio-->
+
+            <div> <!-- este div se utiliza para estructurar el campo de telefono -->
+                <label for="telefono">Teléfono (opcional):</label> <!-- esta es la etiqueta del telefono -->
+                <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000"> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir su telefono con un placeholder que es un texto de ejemplo -->
+            </div><br><br> <!--Cierre del div y dos br para dar espacio-->
+            
+            <button type="submit">Suscribirse</button> <!-- boton para enviar el formulario y llevará a la página gracias.html -->
+            <button type="reset">Borrar</button> <!-- boton para borrar los datos introducidos en el formulario -->
+      </form> <!--Cierre del formulario-->
+    </section> <!--Cierre de la sección del formulario de inscripción-->
   </main>
 </body>
 </html>

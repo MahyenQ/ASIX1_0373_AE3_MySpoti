@@ -3,55 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariana Grande — Discografía</title>
-  <link rel="icon" type="image/png" href="../imagenes/discografia.png">
+  <title>Ariana Grande — Discografía</title> <!--Es el título de la página-->
+  <link rel="icon" type="image/png" href="../imagenes/discografia.png"> <!--Icono de la página-->
+  <script src="https://kit.fontawesome.com/775493b5a6.js" crossorigin="anonymous"></script> <!--Enlace de los iconos de Font Awesome-->
 </head>
 <body>
-  <header>
-    <center><h1>DISCOGRAFÍA</h1></center>
-        <nav aria-label="Menu Primcipal"></nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./discografia.html">Ver Discografía</a></li>
-                <li><a href="./formulario.html">Suscribirse a Newsletter</a></li>
-                <li><a href="./album1.html">Primer album</a></li>
-                <li><a href="./album2.html">Segundo album</a></li>
-                <li><a href="./album3.html">Tercer album</a></li>
+<header> <!-- aqui es por donde empieza el encabezado-->
+        <nav aria-label="Menu Primcipal"></nav> <!--esto es el menu de navegacion principal donde aria-label es para accesibilidad-->
+            <center> <!--lo he utilizado para centrar el menu de navegacion-->
+              <ul> <!--Lista desordenada para el menu de navegacion-->
+                <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a> <!-- Enlace a la página de inicio con un icono de casa-->
+                <a href="./discografia.html"><i class="fa-solid fa-compact-disc"></i>Ver Discografía</a> <!-- Enlace a la página de discografía con un icono de disco-->
+                <a href="./formulario.html"><i class="fa-solid fa-envelope-open"></i>Suscribirse a Newsletter</a> <!-- Enlace a la página de formulario con un icono -->
+                <a href="./album1.html"><i class="fa-solid fa-music"></i>Primer album</a> <!-- Enlace a la página del primer álbum con un icono de música-->
+                <a href="./album2.html"><i class="fa-solid fa-music"></i>Segundo album</a> <!-- Enlace a la página del segundo álbum con un icono de música-->
+                <a href="./album3.html"><i class="fa-solid fa-music"></i>Tercer album</a> <!-- Enlace a la página del tercer álbum con un icono de música-->
             </ul>
-        </nav>
+        </nav></center> <!--Cierre del menú de navegación y centrado-->
   </header>
 
-  <main>
-    <section>
-      <center><h2>Álbumes publicados de Ariana Grande</h2>
-      <p>A continuación aparecen las portadas de los álbumes. Haciendo clic en cada portada accederás a la ficha del álbum.</p></center>
-          <article>
-            <figure>
-              <!-- La imagen es enlace a la página del álbum -->
-              <a href="./album1.html">
-                <img src="../imagenes/album1.png" alt="Portada del album One" width="200" height="200">
-              </a>
-              <h3>ÁLBUM 1 - YOURS TRULY (2013)</h3>
-            </figure>
-          </article>
-
-          <article>
-            <figure>
-              <a href="./album2.html">
-                <img src="../imagenes/album2.png" alt="Portada del album 2" width="200" height="200">
-              </a>
-              <h3>ÁLBUM 2 - MY EVERYTHING (2014)</h3>
-            </figure>
-          </article>
-
-          <article>
-            <figure>
-              <a href="./album3.html">
-                <img src="../imagenes/album3.png" alt="Portada del album 3" width="200" height="200">
-              </a>
-              <h3>ÁLBUM 3 - DANGEROUS WOMAN (2016) </h3>
-            </figure>
-          </article>
+  <main> <!--Contenido principal de la página-->
+    <section> <!--Sección sobre la discografía de Ariana Grande-->
+      <center><h1>ÁLBUMES PUBLICADOS DE ARIANA GRANDE</h1> <!--Título principal de la sección y centrado-->
+        <h4> A continuación aparecen las portadas de los álbumes de 
+        Ariana Grande. Haciendo clic en cada portada accederás a 
+        la ficha del álbum.</h4> 
+        <p>El primero es Yours Truly (2013), el 
+        álbum debut de Ariana, donde combina pop y R&B con influencias 
+        del soul y del doo-wop. Incluye canciones como “The Way”, 
+        “Baby I” y “Right There”, que destacan por su estilo romántico 
+        y la potencia vocal de la artista. En la portada se ve a Ariana 
+        sentada sobre un fondo de rosas, reflejando una imagen dulce, clásica 
+        y nostálgica. El segundo álbum es My Everything (2014), que muestra 
+        una evolución hacia un sonido más moderno y electrónico. Con temas como 
+        “Problem”, “Break Free” y “Love Me Harder”, Ariana consolidó su fama mundial. 
+        La portada la presenta sentada sobre un taburete, vestida de negro y con una 
+        expresión más madura, simbolizando su crecimiento artístico y personal. Por 
+        último, Dangerous Woman (2016) representa una nueva etapa en su carrera, 
+        caracterizada por la confianza, la sensualidad y el empoderamiento. En este disco 
+        mezcla pop, soul y toques de rock, con éxitos como “Into You”, “Side to Side” y 
+        “Dangerous Woman”. En la portada aparece usando una máscara negra con orejas de conejo, 
+        símbolo de su transformación hacia una artista más fuerte y segura de sí misma. </p><br>
+      <article>
+        <figure>
+          <a href="./album1.html"> <!-- enlace a la pagina html de primer album -->
+            <img src="../imagenes/album1.png" alt="Portada del album 1" width="450" height="400"> <!-- imagen del primer album-->
+          </a>
+          <a href="./album2.html">  <!-- enlace a la pagina html de segundo album -->
+            <img src="../imagenes/album2.png" alt="Portada del album 2" width="450" height="400">  <!-- imagen del segundo album-->
+          </a>
+          <a href="./album3.html"> <!-- enlace a la pagina html de tercer album -->
+            <img src="../imagenes/album3.png" alt="Portada del album 3" width="450" height="400">  <!-- imagen del tercer album-->
+          </a>
+        </figure>
+      </article></center>
     </section>
   </main>
 </body>
