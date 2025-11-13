@@ -9,20 +9,18 @@
 </head>
 <body>
 <header> <!-- aqui es por donde empieza el encabezado-->
-        <nav aria-label="Menu Primcipal"></nav> <!--esto es el menu de navegacion principal donde aria-label es para accesibilidad-->
+        <nav aria-label="Menu Primcipal"> <!--esto es el menu de navegacion principal donde aria-label es para accesibilidad-->
             <center> <!--lo he utilizado para centrar el menu de navegacion-->
-                <ul> <!--Lista desordenada para el menu de navegacion-->
                 <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a> <!-- Enlace a la página de inicio con un icono de casa-->
                 <a href="./discografia.html"><i class="fa-solid fa-compact-disc"></i>Ver Discografía</a> <!-- Enlace a la página de discografía con un icono de disco-->
                 <a href="./formulario.html"><i class="fa-solid fa-envelope-open"></i>Suscribirse a Newsletter</a> <!-- Enlace a la página de formulario con un icono -->
                 <a href="./album1.html"><i class="fa-solid fa-music"></i>Primer album</a> <!-- Enlace a la página del primer álbum con un icono de música-->
                 <a href="./album2.html"><i class="fa-solid fa-music"></i>Segundo album</a> <!-- Enlace a la página del segundo álbum con un icono de música-->
                 <a href="./album3.html"><i class="fa-solid fa-music"></i>Tercer album</a> <!-- Enlace a la página del tercer álbum con un icono de música-->
-            </ul> <!--Cierre de la lista desordenada-->
         </nav></center> <!--Cierre del menú de navegación y centrado-->
   </header> <!--Cierre del encabezado-->
 
-    <center><em><h1>FORMULARIO DE INSCRIPCIÓN</h1></em></center> <!--Título principal de la sección y centrado-->
+    <center><h1>FORMULARIO DE INSCRIPCIÓN</h1></center> <!--Título principal de la sección y centrado-->
     <main> <!--Contenido principal de la página-->
     <section> <!--Sección del formulario de inscripción-->
       <form action="./gracias.html" method="post" target="_blank"> <!--Formulario que envía los datos a gracias.html-->
@@ -36,7 +34,7 @@
             
             <label for="pais">País:</label> <!-- esta es la etiqueta del pais -->
             <select id="pais" name="pais" required> <!-- en esta linea de select se define un menu desplegable para que el usuario pueda seleccionar su pais -->
-                <option> -- Elige un país -- </option> <!-- la opcion por defecto del menu desplegable -->
+                <option value="" disabled selected> -- Elige un país -- </option> <!-- la opcion por defecto del menu desplegable -->
                 <option value="ES">España</option> <!-- las diferentes opciones del menu desplegable -->
                 <option value="US">Estados Unidos</option> <!-- las diferentes opciones del menu desplegable -->
                 <option value="UK">Reino Unido</option> <!-- las diferentes opciones del menu desplegable -->
@@ -45,7 +43,7 @@
             </select><br><br> <!--Cierre del menú desplegable-->
 
             <label for="correo">Correo electrónico:</label> <!-- esta es la etiqueta del correo electronico -->
-            <input id="correo" name="correo" type="correo" required><br><br> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir su correo electronico -->
+            <input id="correo" name="correo" ><br><br> <!-- en esta linea de input se define el campo de entrada donde el usuario puede escribir su correo electronico -->
 
             <fieldset> <!-- fieldset se utiliza para agrupar elementos relacionados dentro de un formulario -->
                 <legend><h2>Intereses</h2></legend> <!-- la leyenda del fieldset que es el titulo de los intereses -->
